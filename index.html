@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate 1p</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
-            background: url('image1.jpg') no-repeat center center;
-            background-size: 100% 100%; /* Stretch to fit the screen */
-        }
-        .donate-container {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            width: 90%;
-            max-width: 300px;
-        }
-        .donate-button {
-            background-color: #0070ba;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 20px;
-            cursor: pointer;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 250px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate Options</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      background: url('image1.jpg') no-repeat center center;
+      background-size: 100% 100%; /* Stretch to fit the screen */
+    }
+    .donate-container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 90%;
+      max-width: 300px;
+      margin-bottom: 15px;
+    }
+    .donate-button {
+      background-color: #0070ba;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 250px;
+    }
+  </style>
 </head>
 <body>
-    <div class="donate-container">
-        <form action="https://www.paypal.com/donate" method="post" target="_blank">
-            <input type="hidden" name="business" value="subjecktive@gmail.com">
-            <input type="hidden" name="currency_code" value="GBP">
-            <input type="hidden" name="amount" value="0.01">
-            <button type="submit" class="donate-button">Donate 1p</button>
-        </form>
-    </div>
+  <!-- Donate 1p -->
+  <div class="donate-container">
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="subjecktive@gmail.com" />
+      <input type="hidden" name="currency_code" value="GBP" />
+      <input type="hidden" name="amount" value="0.01" />
+      <button type="submit" class="donate-button">Donate 1p</button>
+    </form>
+  </div>
+  
+  <!-- Donate £1 -->
+  <div class="donate-container">
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="subjecktive@gmail.com" />
+      <input type="hidden" name="currency_code" value="GBP" />
+      <input type="hidden" name="amount" value="1.00" />
+      <button type="submit" class="donate-button">Donate £1</button>
+    </form>
+  </div>
+  
+  <!-- Donate £5 -->
+  <div class="donate-container">
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="subjecktive@gmail.com" />
+      <input type="hidden" name="currency_code" value="GBP" />
+      <input type="hidden" name="amount" value="5.00" />
+      <button type="submit" class="donate-button">Donate £5</button>
+    </form>
+  </div>
+  
+  <!-- Donate £10 -->
+  <div class="donate-container">
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="subjecktive@gmail.com" />
+      <input type="hidden" name="currency_code" value="GBP" />
+      <input type="hidden" name="amount" value="10.00" />
+      <button type="submit" class="donate-button">Donate £10</button>
+    </form>
+  </div>
 </body>
 </html>
