@@ -13,13 +13,14 @@
     body {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end; /* Align content to the bottom */
       align-items: center;
       height: 100vh;
       overflow: hidden;
       position: relative;
       background: url('image1.jpg') no-repeat center center;
-      background-size: 100% 100%; /* Stretch to fit the screen */
+      background-size: 100% 100%;
+      padding-bottom: 20px; /* Optional: add extra space at the bottom */
     }
     .donate-container {
       position: relative;
@@ -27,7 +28,7 @@
       text-align: center;
       width: 90%;
       max-width: 300px;
-      margin-bottom: 15px;
+      margin: 10px 0;
     }
     .donate-button {
       background-color: #0070ba;
